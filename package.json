@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/weitzman/buster/issues"
   },
-  "homepage": "https://github.com/weitzman/buster#readme"
+  "homepage": "https://github.com/weitzman/buster#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
