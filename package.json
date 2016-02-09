@@ -18,5 +18,8 @@
   "homepage": "https://github.com/weitzman/buster#readme",
   "dependencies": {
     "express": "^4.13.4"
+  },
+  "engines": {
+    "node": "4.2.4"
   }
 }
