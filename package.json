@@ -1,16 +1,16 @@
 {
   "name": "buster",
   "version": "1.0.0",
-  "description": "Bust stop chooser.",
-  "main": "index.html",
+  "description": "Bus stop chooser.",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/weitzman/buster.git"
   },
-  "author": "",
+  "author": "Moshe Weitzman",
   "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/weitzman/buster/issues"
