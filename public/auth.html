@@ -41,7 +41,7 @@
                         <nav>
                             <ul class="nav masthead-nav">
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Features</a></li>
+                                <li><a href="#">About</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
                         </nav>
@@ -203,11 +203,25 @@
 
                                 $("#get").click(function() {
                                     var categoryInfo = "\nCategory: { id: " + categories.value() + ", name: " + categories.text() + " }",
-                                            productInfo = "\nProduct: { id: " + products.value() + ", name: " + products.text() + " }",
-                                            orderInfo = "\nOrder: { id: " + orders.value() + ", name: " + orders.text() + " }";
+                                        productInfo = "\nProduct: { id: " + products.value() + ", name: " + products.text() + " }",
+                                        orderInfo = "\nOrder: { id: " + orders.value() + ", name: " + orders.text() + " }";
 
-//                                    alert("Order details:\n" + categoryInfo + productInfo + orderInfo);
-                                    window.location = "https://pitangui.amazon.com/spa/skill/account-linking-status.html?vendorId=M3VDQ5YRQWZBZV";
+//                                  alert("Order details:\n" + categoryInfo + productInfo + orderInfo);
+
+                                    /* stop form from submitting normally */
+                                    event.preventDefault();
+
+                                    /* Send the data using post */
+                                    var posting = $.post( url, { name: $('#name').val(), name2: $('#name2').val() } );
+
+                                    /* Alerts the results */
+                                    posting.done(function( data ) {
+                                        alert('success');
+                                    });
+
+                                    var redirect = "https://pitangui.amazon.com/spa/skill/account-linking-status.html?vendorId=M3VDQ5YRQWZBZV";
+                                    params = '';
+                                    window.location = redirect + params;
 
                                 });
                             });
