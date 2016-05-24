@@ -1,25 +1,14 @@
 {
-  "name": "buster",
-  "version": "1.0.0",
-  "description": "Bus stop chooser.",
+  "name": "busterlamda",
+  "version": "0.1.0",
+  "description": "Buster response as an AWS Lamda",
   "main": "index.js",
   "scripts": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/weitzman/buster.git"
-  },
   "author": "Moshe Weitzman",
   "license": "Unlicense",
-  "bugs": {
-    "url": "https://github.com/weitzman/buster/issues"
-  },
-  "homepage": "https://github.com/weitzman/buster#readme",
   "dependencies": {
-    "express": "^4.13.4"
-  },
-  "engines": {
-    "node": "4.2.4"
+    "xml2js": "^0.4.16"
   }
 }
